@@ -27,31 +27,31 @@ export default function Home() {
                         aria-current="page"
                       >
                         <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
-                        Home
+                       <p> Home</p>
                       </a>
                     </li>
                     <li>
                       <a href="#" className="nav-link text-white">
                       <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>
-                        Search
+                        <p>Search</p>
                       </a>
                     </li>
                     <li>
                       <a href="#" className="nav-link text-white">
                       <FontAwesomeIcon icon={faBookmark}></FontAwesomeIcon>
-                        Your Library
+                        <p>Your Library</p>
                       </a>
                     </li>
                     <li>
                       <a href="#" className="nav-link text-white">
                       <FontAwesomeIcon icon={faSearchPlus}></FontAwesomeIcon>
-                        Create Playlist
+                        <p>Create Playlist</p>
                       </a>
                     </li>
                     <li>
                       <a href="#" className="nav-link text-white">
                       <FontAwesomeIcon icon={faShieldHeart}></FontAwesomeIcon>
-                        Liked Songs
+                        <p>Liked Songs</p>
                       </a>
                     </li>
                   </ul>

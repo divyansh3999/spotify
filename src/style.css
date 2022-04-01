@@ -12,3 +12,15 @@
 .homeContent{
     background-image: var(--gradiant);
 }
+.nav-link svg{
+    margin-right: 15px;
+}
+.nav-pills .nav-link{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.nav-pills .nav-link p{
+    font-size: 15px;
+    margin-bottom: 0;
+}
