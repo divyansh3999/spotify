@@ -1,5 +1,6 @@
 :root{
     --black:#000;
+    --gradiant:linear-gradient(rgb(56,70,75), #121212);
 }
 .homeSidebar, .homeContent{
     height: 100vh;
@@ -7,4 +8,7 @@
 }
 .logo img{
     width: 130px;
+}
+.homeContent{
+    background-image: var(--gradiant);
 }
