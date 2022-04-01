@@ -1,0 +1,10 @@
+:root{
+    --black:#000;
+}
+.homeSidebar, .homeContent{
+    height: 100vh;
+    background-color: var(--black);
+}
+.logo img{
+    width: 130px;
+}
