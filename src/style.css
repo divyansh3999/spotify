@@ -1,26 +1,115 @@
-:root{
-    --black:#000;
-    --gradiant:linear-gradient(rgb(56,70,75), #121212);
+:root {
+  --black: #000;
 }
-.homeSidebar, .homeContent{
-    height: 100vh;
-    background-color: var(--black);
+.homeSidebar {
+  height: 100vh;
+  background-color: var(--black);
 }
-.logo img{
-    width: 130px;
+.logo img {
+  width: 130px;
 }
-.homeContent{
-    background-image: var(--gradiant);
+.nav-pills .nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
 }
-.nav-link svg{
-    margin-right: 15px;
+.nav-pills .nav-link p {
+  margin-left: 20px;
+  margin-bottom: 0px;
+  font-size: 14px;
 }
-.nav-pills .nav-link{
-    font-size: 20px;
-    display: flex;
-    align-items: center;
+.homeContent {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* background-image: linear-gradient(#2da781, #165541); */
+  background-image: linear-gradient(#165541, #121212);
 }
-.nav-pills .nav-link p{
-    font-size: 15px;
-    margin-bottom: 0;
+.library img {
+  width: 250px;
 }
+.library h3 {
+  font-size: 84px;
+}
+.music img {
+  width: 50px;
+  margin-right: 20px;
+}
+.music table th {
+  color: #dddddd;
+  border: none;
+}
+.music table td {
+  color: #919191;
+  border: none;
+}
+
+/* search bar */
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  background-color: transparent;
+  padding-right: 40px;
+  color: #fff;
+}
+.input-search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+.btn-search:focus ~ .input-search {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+.input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+/* a */
+
+.authBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}
+/* https://accounts.spotify.com/authorize?client_id=e6e1b8da714c4b1b83deab90f566d24d&scopes=playlist-read-private&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F */
+
+/* curl -H "Authorization: Basic ZTZlMWI4ZGE3MTRjNGIxYjgzZGVhYjkwZjU2NmQyNGQ6MGVhMWEzYzAxZGEwNGU2ZWFmM2U1NzU1ZmZiZmExZWI=" -d grant_type=authorization_code -d code=AQA-lr4HGRoX1VkYLvCEKJoEqdDTzYsbku7xo9CuA4wJNIkR_5oQ53xLdmDDNx5YxjKqLm2SCzfw8LigP0_t5Svl4r4fFAXPDjmc0BdEO2CFhDg2blKFsq_7eP-Gt2WBCu8xkX3RPmZvB_v6Akt96Fmp-f1OMNZFDR0 -d redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F https://accounts.spotify.com/api/token */
+
+/* {"access_token":"BQDNpm2RFpHCU36v0utAXvXZl4s49Mm0tX3uCTzoMYez-fH4SFCZU2TFhmVAcW1P1djPW95f9k3H8l6_xc6lIWAWj_nTNFciZ6sKRApYe9HDHtMvCyquKKa12pxeNkM5zlgYb-HyyxH1JG9P-S7Oe86ieT6EQcoObw","token_type":"Bearer","expires_in":3600,"refresh_token":"AQAgG7I9W083CqhdMA8UiBre7sz5dCQ27HBdYf82k3JSl8-BR7L9iKauiIJop4hI4WG9StKLH2BP2EJELRO0KDkjmZ8xo7FV7jnkY3Lrv_nWanMhnahhOuHSoKbQRZPRyzg"} */
